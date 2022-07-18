@@ -4,19 +4,22 @@
 div{
     background-color: darkcyan;
     text-align: center;
+    
 }
+
+
 #nombre{
     font-weight: bold;
-    margin-top: 40%;
+    margin-top: 10%;
+    
     }
 @media (min-width:576px) {
     #foto{
         position: absolute;
         width: 15%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px;
+        border-radius: 50%;
         left: 2%;
-        top: 85%;
+        top: 90%;
 
 
     }
@@ -25,10 +28,9 @@ div{
     #foto{
         position: absolute;
         width: 40%;
-        border-radius: 100%;
-        box-shadow: 3px 3px 3px;
+        border-radius: 50%;
         left: 29%;
-        top: 89%;
+        top: 77%;
 
 
     }
