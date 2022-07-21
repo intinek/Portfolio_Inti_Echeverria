@@ -1,9 +1,18 @@
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 1%;
+    
+
+}
+img{
+    width: 40px;
+    margin: 3px;
+    
+}
 #argprog{
     width: 150px;
-}
-#redes{
-    width: 40px;
-    margin-top: 25px;
-    float: right;
-
 }
