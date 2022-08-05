@@ -1,21 +1,17 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/inti.jpg"class="img-fluid" id="foto">
+        <img *ngIf="usuario" src="{{usuario.fotoPerfil}}"class="img-fluid" id="foto">
         
-    </div>
+    </div >
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">Inti Nahuel Echeverria</p>
-        <p id="fs">Fullstack Developer Jr</p>
+        <p *ngIf="usuario" id="nombre">{{usuario.nombre}} {{usuario.apellido}}</p>
+        <p *ngIf="usuario" id="fs">{{usuario.titulo}}</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1>Acerca de mi</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Quibusdam, recusandae quasi. Minima perferendis, 
-                 necessitatibus iusto ducimus autem ab non reiciendis 
-                 officiis deleniti adipisci similique quod ipsam quas porro 
-                 officia nam.
+            <p *ngIf="usuario">
+                {{usuario.descripcion}}
             </p>
         </span>
     </div>
